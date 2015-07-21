@@ -4,7 +4,6 @@ import (
   "fmt"
 )
 
-
 func main() {
   array := []int{9, 6, 7, 3, 2, 4, 5, 1}
 
@@ -21,9 +20,13 @@ func insertion(array []int) {
 
   for i := 1; i < lenght; i++ {
     j := i
+
+    // swap the values until it is the smallest
     for j > 0 && array[j - 1] > array[j] {
       iterations++
       array[j - 1], array[j] = array[j], array[j - 1]
+
+      // values swapped so we need to check for the following array element
       j = j - 1
     }
   }

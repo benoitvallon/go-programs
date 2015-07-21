@@ -27,6 +27,8 @@ func bubble(array []int) {
 
   for j := 0; j < lenght; j++ {
     swapped := false
+
+    // swap values between previous and current if needed
     for i := 1; i < lenght; i++ {
       iterations++
       if array[i - 1] > array[i] {
@@ -34,6 +36,7 @@ func bubble(array []int) {
         swapped = true
       }
     }
+
     if swapped == false {
       break
     }
