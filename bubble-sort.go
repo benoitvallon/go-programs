@@ -4,7 +4,6 @@ import (
   "fmt"
 )
 
-
 func main() {
   array := []int{9, 6, 7, 3, 2, 4, 5, 1}
 
